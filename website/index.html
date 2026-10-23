@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A portfolio demo of static website hosting on Azure Storage provisioned with Terraform.">
+  <title>Azure Static Website | Terraform Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Azure Static Website</a>
+    <span class="tag">Terraform Portfolio Project</span>
+  </header>
+  <main class="hero">
+    <p class="eyebrow">PROJECT 01 · AZURE STORAGE</p>
+    <h1>Static website hosting, built with Infrastructure as Code.</h1>
+    <p class="intro">This demo hosts static HTML, CSS and JavaScript using Azure Storage static website hosting. Terraform provisions the infrastructure and publishes the site files.</p>
+    <div class="actions">
+      <a class="button primary" href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website" target="_blank" rel="noopener noreferrer">Read Azure documentation</a>
+      <a class="button secondary" href="https://developer.hashicorp.com/terraform" target="_blank" rel="noopener noreferrer">Explore Terraform</a>
+    </div>
+    <section class="cards" aria-label="Project highlights">
+      <article class="card"><span class="number">01</span><h2>Infrastructure as Code</h2><p>Repeatable resource provisioning with version-controlled Terraform.</p></article>
+      <article class="card"><span class="number">02</span><h2>Secure defaults</h2><p>HTTPS-only traffic, TLS 1.2 minimum and no anonymous access to the Blob service endpoint.</p></article>
+      <article class="card"><span class="number">03</span><h2>Automated checks</h2><p>GitHub Actions checks Terraform formatting and configuration validity on each change.</p></article>
+    </section>
+    <p class="note"><strong>Learning note:</strong> Azure Storage static website content is publicly readable through the static website endpoint. Do not publish confidential content here.</p>
+  </main>
+  <footer>Demo project · Azure Storage · Terraform · GitHub Actions</footer>
+</body>
+</html>

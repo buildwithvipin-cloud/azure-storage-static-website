@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars locally and enter your own values.
+# Do not commit terraform.tfvars.
+subscription_id      = "00000000-0000-0000-0000-000000000000"
+resource_group_name  = "rg-static-website-demo"
+location             = "eastus"
+storage_account_name = "replacewithunique123"

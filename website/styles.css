@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  --ink: #14233b;
+  --muted: #53647c;
+  --accent: #4f46e5;
+  --line: #dce4ef;
+  --panel: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef4ff 0%, #f8faff 55%, #f2f0ff 100%);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+.site-header {
+  max-width: 1100px; margin: 0 auto; padding: 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.brand { color: var(--ink); font-weight: 800; text-decoration: none; }
+.tag, .eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.hero { max-width: 1100px; margin: 50px auto 80px; padding: 24px; }
+h1 { max-width: 850px; margin: 12px 0 20px; font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 1.06; letter-spacing: -.05em; }
+.intro { max-width: 760px; color: var(--muted); font-size: 1.15rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 46px; }
+.button { display: inline-block; padding: 12px 18px; border-radius: 10px; font-weight: 700; text-decoration: none; }
+.primary { background: var(--accent); color: white; }
+.secondary { border: 1px solid #c8d2e2; background: white; color: var(--ink); }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.card { padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); box-shadow: 0 12px 32px #223a5b0b; }
+.number { color: var(--accent); font-weight: 800; }
+.card h2 { font-size: 1.15rem; }
+.card p, .note { color: var(--muted); }
+.note { margin-top: 28px; padding: 16px 18px; border-left: 4px solid var(--accent); background: #fff; border-radius: 8px; }
+footer { padding: 24px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }
+.error-page { min-height: 65vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+@media (max-width: 720px) {
+  .site-header { align-items: flex-start; flex-direction: column; }
+  .hero { margin-top: 20px; }
+  .cards { grid-template-columns: 1fr; }
+}
